@@ -1,12 +1,5 @@
 def print_(obj):
     print(obj, end='\t')
+fb_list = ['fizzbuzz' if i%15==0 else 'fizz' if i%3==0  else 'buzz' if i%5==0 else  i for i in range(1,300+1)]
 
-for i in range(1,100+1):
-    if i%15==0:
-        print_('피즈버즈')
-    elif i%5==0:
-        print_('BUZZ')
-    else:
-        print_(i)
-
-print('')
+print(fb_list)
